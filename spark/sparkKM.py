@@ -1,4 +1,3 @@
-sc.install_packages("pysaprk")
 from pyspark.ml.clustering import KMeans
 from pyspark.ml.evaluation import ClusteringEvaluator
 from pyspark.sql import SparkSession
