@@ -9,7 +9,8 @@ spark = SparkSession\
 
 # $example on$
 # Loads data.
-dataset = spark.read.format("libsvm").load(os.getcwd()+'/sample_kmeans_data.txt')
+#dataset = spark.read.format("libsvm").load(os.getcwd()+'/sample_kmeans_data.txt')
+dataset = spark.read.format("csv").load(os.getcwd()+'/f_1901_1978.csv')
 
 # Trains a k-means model.
 kmeans = KMeans().setK(2).setSeed(1)
