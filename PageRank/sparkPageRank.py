@@ -58,7 +58,7 @@ if __name__ == "__main__":
     #     URL         neighbor URL
     #     URL         neighbor URL
     #     ...
-    lines = spark.read.text("page_rank_data.csv").rdd.map(lambda r: r[0])
+    lines = spark.read.text("wiki-Vote.csv").rdd.map(lambda r: r[0])
 
     # Loads all URLs from input file and initialize their neighbors.
     links = lines.map(lambda urls: parseNeighbors(urls)).distinct().groupByKey().cache()
