@@ -41,7 +41,7 @@ def computeContribs(urls: ResultIterable[str], rank: float) -> Iterable[Tuple[st
 
 def parseNeighbors(urls: str) -> Tuple[str, str]:
     """Parses a urls pair string into urls pair."""
-    parts = re.split(r'\s+', urls)
+    parts = re.split(',', urls)
     return parts[0], parts[1]
 
 
