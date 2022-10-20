@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from mrjob.job import MRJob
 from mrjob.step import MRStep
 import numpy as np
