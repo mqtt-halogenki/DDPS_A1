@@ -2,7 +2,7 @@ import sys
 
 for line in sys.stdin:
     line = line.strip()
-    values = line.split('\t')
+    values = line.split(',')
     for i in range(len(values)):
         if i > 1:
             print('%s\t%s' % (values[0], values[i]))
