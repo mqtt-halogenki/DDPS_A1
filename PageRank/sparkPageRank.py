@@ -1,6 +1,3 @@
-# THIS CODE IS FROM SPARK REPOSITORY OF EXAMPLES
-#https://github.com/apache/spark/blob/master/examples/src/main/python/pagerank.py
-
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.
@@ -25,6 +22,7 @@ bin/spark-submit examples/src/main/python/pagerank.py data/mllib/pagerank_data.t
 """
 import re
 import sys
+import os
 from operator import add
 from typing import Iterable, Tuple
 
@@ -41,12 +39,11 @@ def computeContribs(urls: ResultIterable[str], rank: float) -> Iterable[Tuple[st
 
 def parseNeighbors(urls: str) -> Tuple[str, str]:
     """Parses a urls pair string into urls pair."""
-    parts = re.split(',', urls)
+    parts = re.split(r',', urls)
     return parts[0], parts[1]
 
 
 if __name__ == "__main__":
-
     # Initialize the spark context.
     spark = SparkSession\
         .builder\
@@ -58,7 +55,7 @@ if __name__ == "__main__":
     #     URL         neighbor URL
     #     URL         neighbor URL
     #     ...
-    lines = spark.read.text("wiki-Vote.csv").rdd.map(lambda r: r[0])
+    lines = spark.read.text("wiki-Vote.txt").rdd.map(lambda r: r[0])
 
     # Loads all URLs from input file and initialize their neighbors.
     links = lines.map(lambda urls: parseNeighbors(urls)).distinct().groupByKey().cache()
@@ -67,7 +64,7 @@ if __name__ == "__main__":
     ranks = links.map(lambda url_neighbors: (url_neighbors[0], 1.0))
 
     # Calculates and updates URL ranks continuously using PageRank algorithm.
-    for iteration in range(101):
+    for iteration in range(10):
         # Calculates URL contributions to the rank of other URLs.
         contribs = links.join(ranks).flatMap(lambda url_urls_rank: computeContribs(
             url_urls_rank[1][0], url_urls_rank[1][1]  # type: ignore[arg-type]
@@ -81,3 +78,4 @@ if __name__ == "__main__":
         print("%s has rank: %s." % (link, rank))
 
     spark.stop()
+
