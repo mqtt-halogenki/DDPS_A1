@@ -22,7 +22,6 @@ bin/spark-submit examples/src/main/python/pagerank.py data/mllib/pagerank_data.t
 """
 import re
 import sys
-import os
 from operator import add
 from typing import Iterable, Tuple
 
@@ -30,7 +29,7 @@ from pyspark.resultiterable import ResultIterable
 from pyspark.sql import SparkSession
 
 
-def computeContribs(urls: ResultIterable[str], rank: float) -> Iterable[Tuple[str, float]]:
+def computeContribs(urls, rank):
     """Calculates URL contributions to the rank of other URLs."""
     num_urls = len(urls)
     for url in urls:
