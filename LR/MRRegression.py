@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 from mrjob.job import MRJob
 from mrjob.step import MRStep
