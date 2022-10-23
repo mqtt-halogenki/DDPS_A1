@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 
 current_key = None
