@@ -24,6 +24,7 @@ import re
 import sys
 from operator import add
 from typing import Iterable, Tuple
+import os
 
 from pyspark.resultiterable import ResultIterable
 from pyspark.sql import SparkSession
@@ -38,23 +39,20 @@ def computeContribs(urls, rank):
 
 def parseNeighbors(urls: str) -> Tuple[str, str]:
     """Parses a urls pair string into urls pair."""
-    parts = re.split(r',', urls)
+    parts = re.split(r",", urls)
     return parts[0], parts[1]
 
 
 if __name__ == "__main__":
     # Initialize the spark context.
-    spark = SparkSession\
-        .builder\
-        .appName("PythonPageRank")\
-        .getOrCreate()
+    spark = SparkSession.builder.appName("PythonPageRank").getOrCreate()
 
     # Loads in input file. It should be in format of:
     #     URL         neighbor URL
     #     URL         neighbor URL
     #     URL         neighbor URL
     #     ...
-    lines = spark.read.text("wiki-Vote.txt").rdd.map(lambda r: r[0])
+    lines = spark.read.text(os.path.dirname(__file__) + "/wiki-Vote.txt").rdd.map(lambda r: r[0])
 
     # Loads all URLs from input file and initialize their neighbors.
     links = lines.map(lambda urls: parseNeighbors(urls)).distinct().groupByKey().cache()
@@ -65,9 +63,11 @@ if __name__ == "__main__":
     # Calculates and updates URL ranks continuously using PageRank algorithm.
     for iteration in range(10):
         # Calculates URL contributions to the rank of other URLs.
-        contribs = links.join(ranks).flatMap(lambda url_urls_rank: computeContribs(
-            url_urls_rank[1][0], url_urls_rank[1][1]  # type: ignore[arg-type]
-        ))
+        contribs = links.join(ranks).flatMap(
+            lambda url_urls_rank: computeContribs(
+                url_urls_rank[1][0], url_urls_rank[1][1]  # type: ignore[arg-type]
+            )
+        )
 
         # Re-calculates URL ranks based on neighbor contributions.
         ranks = contribs.reduceByKey(add).mapValues(lambda rank: rank * 0.85 + 0.15)
@@ -77,4 +77,3 @@ if __name__ == "__main__":
         print("%s has rank: %s." % (link, rank))
 
     spark.stop()
-
