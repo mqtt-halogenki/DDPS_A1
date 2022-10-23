@@ -23,7 +23,7 @@ def is_float(str):
 
 for line in sys.stdin:
     line = line.strip()
-    key, value = line.split(',')
+    key, value = line.split('\t')
     if current_key == key:
         if is_float(value):
             vote_arr.append(float(value))
