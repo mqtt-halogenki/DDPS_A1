@@ -2,8 +2,9 @@
 
 cd ~/das-bigdata-deployment/frameworks/hadoop-3.2.2
 
-bin/hdfs dfs -mkdir /input
+bin/hdfs dfs -mkdir /input /output
 bin/hdfs dfs -put ~/DDPS_A1/Kmeans/dataset.txt /input 
+bin/hdfs dfs -put ~/DDPS_A1/Kmeans/centroids.txt /input 
 
 echo "start config mapreduce"
 cd etc/hadoop
@@ -41,14 +42,18 @@ cd ../..
 
 ####################################
 i = 1
-echo "start iteration$i"
 
-while :
+until [$i -gt 10]
 do
-    bin/mapred streaming -input /input/sample_kmeans_data.txt -output /test_KMoutput$i -mapper ~/DDPS_A1/Kmeans/mapper.py -reducer ~/DDPS_A1/Kmeans/reducer.py -file ~/DDPS_A1/Kmeans/centroids.txt
+    echo "start iteration$i"
+    bin/mapred streaming -input /input/sample_kmeans_data.txt -output /output/test_KMoutput$i -mapper ~/DDPS_A1/Kmeans/mapper.py -reducer ~/DDPS_A1/Kmeans/reducer.py -file /input/centroids.txt
     #####
-    rm  -f centroids.txt
-    bin/hdfs dfs -copyToLocal /test_KMoutput$i/part-00000 ~/DDPS_A1/Kmeans/centroids.txt
+    bin/hdfs dfs -rm -f /input/centroids.txt
+    bin/hdfs dfs -cat /output/test_KMoutput$i/part-00000 | bin/hdfs df -put -f - /input/centroids.txt
+    (($i ++))
+done
 
-    if [i ]
-    
+echo "finished!!!!!!!!!!!!!!!"
+
+
+        
