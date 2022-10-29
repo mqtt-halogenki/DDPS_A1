@@ -39,8 +39,9 @@ chmod 777 ~/DDPS_A1/Kmeans/mapper.py ~/DDPS_A1/Kmeans/reducer.py
 
 cd ../..
 
+bin/hdfs dfs -rm -rf /output
 
-####################################
+
 i = 1
 
 until [$i -gt 10]
