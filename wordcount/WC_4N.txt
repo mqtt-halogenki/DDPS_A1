@@ -1,0 +1,2311 @@
+Script started on Thu 03 Nov 2022 10:28:34 AM CET
+]0;ddps2207@node110:~/DDPS_A1/WC[?1034h[ddps2207@node110 WC]$ ./runExperimentSuitePR.sh 
+----------------------------Experiment no 0------------------------------------
+rm: `/outputWC': No such file or directory
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:28:47,466 INFO client.RMProxy: Connecting to ResourceManager at node110.ib.cluster/10.149.1.10:8030
+2022-11-03 10:28:47,957 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667467679021_0002
+2022-11-03 10:28:48,294 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:28:48,464 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:28:48,647 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667467679021_0002
+2022-11-03 10:28:48,648 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:28:48,823 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:28:48,824 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:28:48,888 INFO impl.YarnClientImpl: Submitted application application_1667467679021_0002
+2022-11-03 10:28:48,936 INFO mapreduce.Job: The url to track the job: http://node110.ib.cluster:8088/proxy/application_1667467679021_0002/
+2022-11-03 10:28:48,937 INFO mapreduce.Job: Running job: job_1667467679021_0002
+2022-11-03 10:28:52,986 INFO mapreduce.Job: Job job_1667467679021_0002 running in uber mode : false
+2022-11-03 10:28:52,988 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:28:53,011 INFO mapreduce.Job: Job job_1667467679021_0002 failed with state FAILED due to: Application application_1667467679021_0002 failed 2 times due to AM Container for appattempt_1667467679021_0002_000002 exited with  exitCode: 1
+Failing this attempt.Diagnostics: [2022-11-03 10:28:52.474]Exception from container-launch.
+Container id: container_1667467679021_0002_02_000001
+Exit code: 1
+
+[2022-11-03 10:28:52.481]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+[2022-11-03 10:28:52.482]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+For more detailed output, check the application tracking page: http://node110.ib.cluster:8088/cluster/app/application_1667467679021_0002 Then click on links to logs of each attempt.
+. Failing the application.
+2022-11-03 10:28:53,042 INFO mapreduce.Job: Counters: 0
+----------------------------Experiment no 1------------------------------------
+rm: `/outputWC': No such file or directory
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:29:01,693 INFO client.RMProxy: Connecting to ResourceManager at node110.ib.cluster/10.149.1.10:8030
+2022-11-03 10:29:02,102 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667467679021_0004
+2022-11-03 10:29:02,400 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:29:02,551 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:29:02,692 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667467679021_0004
+2022-11-03 10:29:02,694 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:29:02,898 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:29:02,898 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:29:02,966 INFO impl.YarnClientImpl: Submitted application application_1667467679021_0004
+2022-11-03 10:29:03,002 INFO mapreduce.Job: The url to track the job: http://node110.ib.cluster:8088/proxy/application_1667467679021_0004/
+2022-11-03 10:29:03,002 INFO mapreduce.Job: Running job: job_1667467679021_0004
+2022-11-03 10:29:05,026 INFO mapreduce.Job: Job job_1667467679021_0004 running in uber mode : false
+2022-11-03 10:29:05,028 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:29:05,048 INFO mapreduce.Job: Job job_1667467679021_0004 failed with state FAILED due to: Application application_1667467679021_0004 failed 2 times due to AM Container for appattempt_1667467679021_0004_000002 exited with  exitCode: 1
+Failing this attempt.Diagnostics: [2022-11-03 10:29:04.821]Exception from container-launch.
+Container id: container_1667467679021_0004_02_000001
+Exit code: 1
+
+[2022-11-03 10:29:04.825]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+[2022-11-03 10:29:04.826]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+For more detailed output, check the application tracking page: http://node110.ib.cluster:8088/cluster/app/application_1667467679021_0004 Then click on links to logs of each attempt.
+. Failing the application.
+2022-11-03 10:29:05,099 INFO mapreduce.Job: Counters: 0
+----------------------------Experiment no 2------------------------------------
+rm: `/outputWC': No such file or directory
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:29:13,821 INFO client.RMProxy: Connecting to ResourceManager at node110.ib.cluster/10.149.1.10:8030
+2022-11-03 10:29:14,253 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667467679021_0006
+2022-11-03 10:29:14,574 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:29:14,752 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:29:14,935 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667467679021_0006
+2022-11-03 10:29:14,937 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:29:15,114 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:29:15,115 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:29:15,179 INFO impl.YarnClientImpl: Submitted application application_1667467679021_0006
+2022-11-03 10:29:15,231 INFO mapreduce.Job: The url to track the job: http://node110.ib.cluster:8088/proxy/application_1667467679021_0006/
+2022-11-03 10:29:15,231 INFO mapreduce.Job: Running job: job_1667467679021_0006
+2022-11-03 10:29:21,345 INFO mapreduce.Job: Job job_1667467679021_0006 running in uber mode : false
+2022-11-03 10:29:21,347 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:29:39,542 INFO mapreduce.Job:  map 27% reduce 0%
+2022-11-03 10:29:45,575 INFO mapreduce.Job:  map 38% reduce 0%
+2022-11-03 10:29:51,608 INFO mapreduce.Job:  map 49% reduce 0%
+2022-11-03 10:29:53,633 INFO mapreduce.Job:  map 53% reduce 0%
+2022-11-03 10:29:57,652 INFO mapreduce.Job:  map 62% reduce 0%
+2022-11-03 10:30:03,681 INFO mapreduce.Job:  map 70% reduce 0%
+2022-11-03 10:30:05,692 INFO mapreduce.Job:  map 78% reduce 0%
+2022-11-03 10:30:06,697 INFO mapreduce.Job:  map 85% reduce 0%
+2022-11-03 10:30:07,703 INFO mapreduce.Job:  map 93% reduce 0%
+2022-11-03 10:30:08,708 INFO mapreduce.Job:  map 96% reduce 0%
+2022-11-03 10:30:09,714 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 10:30:10,719 INFO mapreduce.Job:  map 100% reduce 30%
+2022-11-03 10:30:16,749 INFO mapreduce.Job:  map 100% reduce 70%
+2022-11-03 10:30:19,766 INFO mapreduce.Job: Task Id : attempt_1667467679021_0006_r_000000_0, Status : FAILED
+Error: java.io.FileNotFoundException: File hdfs://node110.ib.cluster:9000/outputWC/_temporary/1/_temporary/attempt_1667467679021_0006_r_000000_0 does not exist.
+	at org.apache.hadoop.hdfs.DistributedFileSystem.listStatusInternal(DistributedFileSystem.java:1061)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.access$1000(DistributedFileSystem.java:133)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$24.doCall(DistributedFileSystem.java:1132)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$24.doCall(DistributedFileSystem.java:1129)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.listStatus(DistributedFileSystem.java:1139)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.mergePaths(FileOutputCommitter.java:486)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitTask(FileOutputCommitter.java:605)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.commitTask(FileOutputCommitter.java:568)
+	at org.apache.hadoop.mapred.Task.commit(Task.java:1422)
+	at org.apache.hadoop.mapred.Task.done(Task.java:1266)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:398)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:174)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1762)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:168)
+
+2022-11-03 10:30:20,797 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 10:30:37,882 INFO mapreduce.Job:  map 100% reduce 83%
+2022-11-03 10:30:38,887 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 10:30:39,900 INFO mapreduce.Job: Job job_1667467679021_0006 completed successfully
+2022-11-03 10:30:40,046 INFO mapreduce.Job: Counters: 56
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210061008
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Failed reduce tasks=1
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=2
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=777232
+		Total time spent by all reduces in occupied slots (ms)=162772
+		Total time spent by all map tasks (ms)=388616
+		Total time spent by all reduce tasks (ms)=40693
+		Total vcore-milliseconds taken by all map tasks=388616
+		Total vcore-milliseconds taken by all reduce tasks=40693
+		Total megabyte-milliseconds taken by all map tasks=795885568
+		Total megabyte-milliseconds taken by all reduce tasks=166678528
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=4182
+		CPU time spent (ms)=462370
+		Physical memory (bytes) snapshot=9612787712
+		Virtual memory (bytes) snapshot=39126638592
+		Total committed heap usage (bytes)=13979090944
+		Peak Map Physical memory (bytes)=915705856
+		Peak Map Virtual memory (bytes)=3699134464
+		Peak Reduce Physical memory (bytes)=1481437184
+		Peak Reduce Virtual memory (bytes)=5928951808
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+----------------------------Experiment no 3------------------------------------
+Deleted /outputWC
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:30:49,054 INFO client.RMProxy: Connecting to ResourceManager at node110.ib.cluster/10.149.1.10:8030
+2022-11-03 10:30:49,453 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667467679021_0010
+2022-11-03 10:30:49,769 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:30:49,910 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:30:50,077 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667467679021_0010
+2022-11-03 10:30:50,079 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:30:50,260 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:30:50,260 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:30:50,321 INFO impl.YarnClientImpl: Submitted application application_1667467679021_0010
+2022-11-03 10:30:50,369 INFO mapreduce.Job: The url to track the job: http://node110.ib.cluster:8088/proxy/application_1667467679021_0010/
+2022-11-03 10:30:50,390 INFO mapreduce.Job: Running job: job_1667467679021_0010
+2022-11-03 10:30:56,508 INFO mapreduce.Job: Job job_1667467679021_0010 running in uber mode : false
+2022-11-03 10:30:56,509 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:31:13,649 INFO mapreduce.Job:  map 28% reduce 0%
+2022-11-03 10:31:19,683 INFO mapreduce.Job:  map 42% reduce 0%
+2022-11-03 10:31:22,718 INFO mapreduce.Job:  map 47% reduce 0%
+2022-11-03 10:31:25,733 INFO mapreduce.Job:  map 59% reduce 0%
+2022-11-03 10:31:31,764 INFO mapreduce.Job:  map 70% reduce 0%
+2022-11-03 10:31:32,770 INFO mapreduce.Job:  map 73% reduce 0%
+2022-11-03 10:31:33,776 INFO mapreduce.Job:  map 77% reduce 0%
+2022-11-03 10:31:34,781 INFO mapreduce.Job:  map 80% reduce 0%
+2022-11-03 10:31:35,789 INFO mapreduce.Job:  map 92% reduce 0%
+2022-11-03 10:31:36,795 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 10:31:39,811 INFO mapreduce.Job:  map 100% reduce 37%
+2022-11-03 10:31:45,841 INFO mapreduce.Job:  map 100% reduce 77%
+2022-11-03 10:31:47,852 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 10:31:48,865 INFO mapreduce.Job: Job job_1667467679021_0010 completed successfully
+2022-11-03 10:31:48,986 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210061008
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=660192
+		Total time spent by all reduces in occupied slots (ms)=90424
+		Total time spent by all map tasks (ms)=330096
+		Total time spent by all reduce tasks (ms)=22606
+		Total vcore-milliseconds taken by all map tasks=330096
+		Total vcore-milliseconds taken by all reduce tasks=22606
+		Total megabyte-milliseconds taken by all map tasks=676036608
+		Total megabyte-milliseconds taken by all reduce tasks=92594176
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=6237
+		CPU time spent (ms)=410730
+		Physical memory (bytes) snapshot=9292365824
+		Virtual memory (bytes) snapshot=39117623296
+		Total committed heap usage (bytes)=14772862976
+		Peak Map Physical memory (bytes)=888164352
+		Peak Map Virtual memory (bytes)=3690360832
+		Peak Reduce Physical memory (bytes)=1385316352
+		Peak Reduce Virtual memory (bytes)=5935882240
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+----------------------------Experiment no 4------------------------------------
+Deleted /outputWC
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:31:57,736 INFO client.RMProxy: Connecting to ResourceManager at node110.ib.cluster/10.149.1.10:8030
+2022-11-03 10:31:58,176 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667467679021_0012
+2022-11-03 10:31:58,468 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:31:58,633 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:31:58,800 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667467679021_0012
+2022-11-03 10:31:58,801 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:31:58,971 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:31:58,971 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:31:59,033 INFO impl.YarnClientImpl: Submitted application application_1667467679021_0012
+2022-11-03 10:31:59,079 INFO mapreduce.Job: The url to track the job: http://node110.ib.cluster:8088/proxy/application_1667467679021_0012/
+2022-11-03 10:31:59,080 INFO mapreduce.Job: Running job: job_1667467679021_0012
+2022-11-03 10:32:05,217 INFO mapreduce.Job: Job job_1667467679021_0012 running in uber mode : false
+2022-11-03 10:32:05,219 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:32:22,367 INFO mapreduce.Job:  map 31% reduce 0%
+2022-11-03 10:32:28,401 INFO mapreduce.Job:  map 47% reduce 0%
+2022-11-03 10:32:31,436 INFO mapreduce.Job:  map 51% reduce 0%
+2022-11-03 10:32:34,453 INFO mapreduce.Job:  map 63% reduce 0%
+2022-11-03 10:32:38,475 INFO mapreduce.Job:  map 67% reduce 0%
+2022-11-03 10:32:40,485 INFO mapreduce.Job:  map 75% reduce 0%
+2022-11-03 10:32:41,491 INFO mapreduce.Job:  map 81% reduce 0%
+2022-11-03 10:32:42,497 INFO mapreduce.Job:  map 89% reduce 0%
+2022-11-03 10:32:43,503 INFO mapreduce.Job:  map 96% reduce 0%
+2022-11-03 10:32:44,509 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 10:32:47,525 INFO mapreduce.Job:  map 100% reduce 40%
+2022-11-03 10:32:53,557 INFO mapreduce.Job:  map 100% reduce 85%
+2022-11-03 10:32:55,568 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 10:32:55,578 INFO mapreduce.Job: Job job_1667467679021_0012 completed successfully
+2022-11-03 10:32:55,724 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210061008
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=624842
+		Total time spent by all reduces in occupied slots (ms)=87220
+		Total time spent by all map tasks (ms)=312421
+		Total time spent by all reduce tasks (ms)=21805
+		Total vcore-milliseconds taken by all map tasks=312421
+		Total vcore-milliseconds taken by all reduce tasks=21805
+		Total megabyte-milliseconds taken by all map tasks=639838208
+		Total megabyte-milliseconds taken by all reduce tasks=89313280
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=2910
+		CPU time spent (ms)=388590
+		Physical memory (bytes) snapshot=9411661824
+		Virtual memory (bytes) snapshot=39107203072
+		Total committed heap usage (bytes)=15241576448
+		Peak Map Physical memory (bytes)=911249408
+		Peak Map Virtual memory (bytes)=3690319872
+		Peak Reduce Physical memory (bytes)=1339322368
+		Peak Reduce Virtual memory (bytes)=5927247872
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+----------------------------Experiment no 5------------------------------------
+Deleted /outputWC
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:33:04,663 INFO client.RMProxy: Connecting to ResourceManager at node110.ib.cluster/10.149.1.10:8030
+2022-11-03 10:33:05,201 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667467679021_0013
+2022-11-03 10:33:05,542 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:33:05,683 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:33:05,825 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667467679021_0013
+2022-11-03 10:33:05,826 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:33:06,024 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:33:06,024 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:33:06,098 INFO impl.YarnClientImpl: Submitted application application_1667467679021_0013
+2022-11-03 10:33:06,159 INFO mapreduce.Job: The url to track the job: http://node110.ib.cluster:8088/proxy/application_1667467679021_0013/
+2022-11-03 10:33:06,160 INFO mapreduce.Job: Running job: job_1667467679021_0013
+2022-11-03 10:33:12,272 INFO mapreduce.Job: Job job_1667467679021_0013 running in uber mode : false
+2022-11-03 10:33:12,274 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:33:29,413 INFO mapreduce.Job:  map 32% reduce 0%
+2022-11-03 10:33:35,446 INFO mapreduce.Job:  map 48% reduce 0%
+2022-11-03 10:33:37,477 INFO mapreduce.Job:  map 52% reduce 0%
+2022-11-03 10:33:41,499 INFO mapreduce.Job:  map 64% reduce 0%
+2022-11-03 10:33:46,524 INFO mapreduce.Job:  map 72% reduce 0%
+2022-11-03 10:33:47,530 INFO mapreduce.Job:  map 82% reduce 0%
+2022-11-03 10:33:48,536 INFO mapreduce.Job:  map 85% reduce 0%
+2022-11-03 10:33:49,541 INFO mapreduce.Job:  map 93% reduce 0%
+2022-11-03 10:33:50,547 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 10:33:54,568 INFO mapreduce.Job:  map 100% reduce 46%
+2022-11-03 10:34:00,600 INFO mapreduce.Job:  map 100% reduce 94%
+2022-11-03 10:34:01,606 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 10:34:01,615 INFO mapreduce.Job: Job job_1667467679021_0013 completed successfully
+2022-11-03 10:34:01,753 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210061008
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=612686
+		Total time spent by all reduces in occupied slots (ms)=83664
+		Total time spent by all map tasks (ms)=306343
+		Total time spent by all reduce tasks (ms)=20916
+		Total vcore-milliseconds taken by all map tasks=306343
+		Total vcore-milliseconds taken by all reduce tasks=20916
+		Total megabyte-milliseconds taken by all map tasks=627390464
+		Total megabyte-milliseconds taken by all reduce tasks=85671936
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=2924
+		CPU time spent (ms)=378170
+		Physical memory (bytes) snapshot=9431912448
+		Virtual memory (bytes) snapshot=39126937600
+		Total committed heap usage (bytes)=13797687296
+		Peak Map Physical memory (bytes)=918827008
+		Peak Map Virtual memory (bytes)=3695157248
+		Peak Reduce Physical memory (bytes)=1287630848
+		Peak Reduce Virtual memory (bytes)=5924503552
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+----------------------------Experiment no 6------------------------------------
+Deleted /outputWC
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:34:10,343 INFO client.RMProxy: Connecting to ResourceManager at node110.ib.cluster/10.149.1.10:8030
+2022-11-03 10:34:10,735 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667467679021_0014
+2022-11-03 10:34:11,043 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:34:11,183 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:34:11,333 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667467679021_0014
+2022-11-03 10:34:11,335 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:34:11,510 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:34:11,511 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:34:11,565 INFO impl.YarnClientImpl: Submitted application application_1667467679021_0014
+2022-11-03 10:34:11,595 INFO mapreduce.Job: The url to track the job: http://node110.ib.cluster:8088/proxy/application_1667467679021_0014/
+2022-11-03 10:34:11,595 INFO mapreduce.Job: Running job: job_1667467679021_0014
+2022-11-03 10:34:17,666 INFO mapreduce.Job: Job job_1667467679021_0014 running in uber mode : false
+2022-11-03 10:34:17,668 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:34:17,687 INFO mapreduce.Job: Job job_1667467679021_0014 failed with state FAILED due to: Application application_1667467679021_0014 failed 2 times due to AM Container for appattempt_1667467679021_0014_000002 exited with  exitCode: 1
+Failing this attempt.Diagnostics: [2022-11-03 10:34:17.461]Exception from container-launch.
+Container id: container_1667467679021_0014_02_000001
+Exit code: 1
+
+[2022-11-03 10:34:17.467]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.mapreduce.v2.app.MRAppMaster).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+
+[2022-11-03 10:34:17.468]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.mapreduce.v2.app.MRAppMaster).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+
+For more detailed output, check the application tracking page: http://node110.ib.cluster:8088/cluster/app/application_1667467679021_0014 Then click on links to logs of each attempt.
+. Failing the application.
+2022-11-03 10:34:17,718 INFO mapreduce.Job: Counters: 0
+----------------------------Experiment no 7------------------------------------
+rm: Call From node110.cm.cluster/10.141.0.10 to node114.ib.cluster:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+mkdir: Call From node110.cm.cluster/10.141.0.10 to node114.ib.cluster:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+put: Call From node110.cm.cluster/10.141.0.10 to node114.ib.cluster:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+2022-11-03 10:34:26,398 INFO client.RMProxy: Connecting to ResourceManager at node114.ib.cluster/10.149.1.14:8030
+java.net.ConnectException: Call From node110.cm.cluster/10.141.0.10 to node114.ib.cluster:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:836)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:760)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1566)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1508)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1405)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:233)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:118)
+	at com.sun.proxy.$Proxy9.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.getFileInfo(ClientNamenodeProtocolTranslatorPB.java:910)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:422)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:165)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:157)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:95)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:359)
+	at com.sun.proxy.$Proxy10.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java:1671)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$29.doCall(DistributedFileSystem.java:1602)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$29.doCall(DistributedFileSystem.java:1599)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1614)
+	at org.apache.hadoop.fs.FileSystem.exists(FileSystem.java:1690)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:163)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:277)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:143)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1565)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1562)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1762)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1562)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1583)
+	at org.apache.hadoop.examples.WordCount.main(WordCount.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:71)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:144)
+	at org.apache.hadoop.examples.ExampleDriver.main(ExampleDriver.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:534)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:812)
+	at org.apache.hadoop.ipc.Client$Connection.access$3800(Client.java:413)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1636)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1452)
+	... 45 more
+----------------------------Experiment no 8------------------------------------
+rm: `/outputWC': No such file or directory
+2022-11-03 10:34:41,041 INFO client.RMProxy: Connecting to ResourceManager at node114.ib.cluster/10.149.1.14:8030
+2022-11-03 10:34:41,623 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667468079257_0001
+2022-11-03 10:34:41,971 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:34:42,197 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:34:42,372 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667468079257_0001
+2022-11-03 10:34:42,373 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:34:42,573 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:34:42,573 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:34:43,080 INFO impl.YarnClientImpl: Submitted application application_1667468079257_0001
+2022-11-03 10:34:43,148 INFO mapreduce.Job: The url to track the job: http://node114.ib.cluster:8088/proxy/application_1667468079257_0001/
+2022-11-03 10:34:43,149 INFO mapreduce.Job: Running job: job_1667468079257_0001
+2022-11-03 10:34:49,248 INFO mapreduce.Job: Job job_1667468079257_0001 running in uber mode : false
+2022-11-03 10:34:49,250 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:34:49,270 INFO mapreduce.Job: Job job_1667468079257_0001 failed with state FAILED due to: Application application_1667468079257_0001 failed 2 times due to AM Container for appattempt_1667468079257_0001_000002 exited with  exitCode: 1
+Failing this attempt.Diagnostics: [2022-11-03 10:34:48.524]Exception from container-launch.
+Container id: container_1667468079257_0001_02_000001
+Exit code: 1
+
+[2022-11-03 10:34:48.582]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+[2022-11-03 10:34:48.583]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+For more detailed output, check the application tracking page: http://node114.ib.cluster:8088/cluster/app/application_1667468079257_0001 Then click on links to logs of each attempt.
+. Failing the application.
+2022-11-03 10:34:49,301 INFO mapreduce.Job: Counters: 0
+----------------------------Experiment no 9------------------------------------
+rm: `/outputWC': No such file or directory
+mkdir: `/inputWC': File exists
+^C^C----------------------------Experiment no 10------------------------------------
+^C^C^C^C^C^C^C----------------------------Experiment no 11------------------------------------
+^C^C^C^C
+]0;ddps2207@node110:~/DDPS_A1/WC[ddps2207@node110 WC]$ ^C
+]0;ddps2207@node110:~/DDPS_A1/WC[ddps2207@node110 WC]$ ^C
+]0;ddps2207@node110:~/DDPS_A1/WC[ddps2207@node110 WC]$ ./runExperimentSuitePR.sh 
+----------------------------Experiment no 0------------------------------------
+rm: `/outputWC': No such file or directory
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:35:11,303 INFO client.RMProxy: Connecting to ResourceManager at node114.ib.cluster/10.149.1.14:8030
+2022-11-03 10:35:11,742 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667468079257_0002
+2022-11-03 10:35:12,066 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:35:12,257 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:35:12,457 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667468079257_0002
+2022-11-03 10:35:12,459 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:35:12,643 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:35:12,643 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:35:12,709 INFO impl.YarnClientImpl: Submitted application application_1667468079257_0002
+2022-11-03 10:35:12,766 INFO mapreduce.Job: The url to track the job: http://node114.ib.cluster:8088/proxy/application_1667468079257_0002/
+2022-11-03 10:35:12,766 INFO mapreduce.Job: Running job: job_1667468079257_0002
+2022-11-03 10:35:15,805 INFO mapreduce.Job: Job job_1667468079257_0002 running in uber mode : false
+2022-11-03 10:35:15,807 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:35:15,828 INFO mapreduce.Job: Job job_1667468079257_0002 failed with state FAILED due to: Application application_1667468079257_0002 failed 2 times due to AM Container for appattempt_1667468079257_0002_000002 exited with  exitCode: 1
+Failing this attempt.Diagnostics: [2022-11-03 10:35:15.524]Exception from container-launch.
+Container id: container_1667468079257_0002_02_000001
+Exit code: 1
+
+[2022-11-03 10:35:15.577]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+[2022-11-03 10:35:15.578]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+For more detailed output, check the application tracking page: http://node114.ib.cluster:8088/cluster/app/application_1667468079257_0002 Then click on links to logs of each attempt.
+. Failing the application.
+2022-11-03 10:35:15,862 INFO mapreduce.Job: Counters: 0
+----------------------------Experiment no 1------------------------------------
+rm: `/outputWC': No such file or directory
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:35:24,229 INFO client.RMProxy: Connecting to ResourceManager at node114.ib.cluster/10.149.1.14:8030
+2022-11-03 10:35:24,710 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667468079257_0003
+2022-11-03 10:35:25,081 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 10:35:25,283 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 10:35:25,466 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667468079257_0003
+2022-11-03 10:35:25,468 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 10:35:25,659 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 10:35:25,660 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 10:35:25,722 INFO impl.YarnClientImpl: Submitted application application_1667468079257_0003
+2022-11-03 10:35:25,770 INFO mapreduce.Job: The url to track the job: http://node114.ib.cluster:8088/proxy/application_1667468079257_0003/
+2022-11-03 10:35:25,771 INFO mapreduce.Job: Running job: job_1667468079257_0003
+2022-11-03 10:35:29,830 INFO mapreduce.Job: Job job_1667468079257_0003 running in uber mode : false
+2022-11-03 10:35:29,833 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 10:35:29,856 INFO mapreduce.Job: Job job_1667468079257_0003 failed with state FAILED due to: Application application_1667468079257_0003 failed 2 times due to AM Container for appattempt_1667468079257_0003_000002 exited with  exitCode: 1
+Failing this attempt.Diagnostics: [2022-11-03 10:35:28.935]Exception from container-launch.
+Container id: container_1667468079257_0003_02_000001
+Exit code: 1
+
+[2022-11-03 10:35:28.944]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+[2022-11-03 10:35:28.945]Container exited with a non-zero exit code 1. Error file: prelaunch.err.
+Last 4096 bytes of prelaunch.err :
+Last 4096 bytes of stderr :
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+Please check whether your etc/hadoop/mapred-site.xml contains the below configuration:
+<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${full path of your hadoop distribution directory}</value>
+</property>
+
+For more detailed output, check the application tracking page: http://node114.ib.cluster:8088/cluster/app/application_1667468079257_0003 Then click on links to logs of each attempt.
+. Failing the application.
+2022-11-03 10:35:29,888 INFO mapreduce.Job: Counters: 0
+----------------------------Experiment no 2------------------------------------
+rm: `/outputWC': No such file or directory
+^C^C
+]0;ddps2207@node110:~/DDPS_A1/WC[ddps2207@node110 WC]$ ^C
+]0;ddps2207@node110:~/DDPS_A1/WC[ddps2207@node110 WC]$ exit
+exit
+
+Script done on Thu 03 Nov 2022 10:35:44 AM CET
+Script started on Thu 03 Nov 2022 10:43:57 AM CET
+]0;ddps2207@node105:~/DDPS_A1/WC[?1034h[ddps2207@node105 WC]$ ./runExperimentSuitePR.sh 
+----------------------------Experiment no 0------------------------------------
+rm: `/outputWC': No such file or directory
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:44:09,255 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://node105.ib.cluster:9000/outputWC already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:164)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:277)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:143)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1565)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1562)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1762)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1562)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1583)
+	at org.apache.hadoop.examples.WordCount.main(WordCount.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:71)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:144)
+	at org.apache.hadoop.examples.ExampleDriver.main(ExampleDriver.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+----------------------------Experiment no 1------------------------------------
+Deleted /outputWC
+^C^C^C----------------------------Experiment no 2------------------------------------
+^C^C^C^C
+]0;ddps2207@node105:~/DDPS_A1/WC[ddps2207@node105 WC]$ ^C
+]0;ddps2207@node105:~/DDPS_A1/WC[ddps2207@node105 WC]$ ca[K[Kvim [K[K[K[Kvim[K[K[Kcat runExperimentSuitePR.sh 
+#!/bin/bash
+
+for ((i=0; i <31; i++));do
+        echo "----------------------------Experiment no $i------------------------------------"
+	cd ~/das-bigdata-deployment/frameworks/hadoop-3.2.2
+	cd etc/hadoop
+
+
+sed -i 's:</configuration>::g'  mapred-site.xml
+
+echo '<property>
+  <name>yarn.app.mapreduce.am.env</name>
+  <value>HADOOP_MAPRED_HOME=/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2
+</value>
+</property>
+
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2
+</value>
+</property>
+
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2</value>
+</property>
+
+<property> 
+    <name>mapreduce.application.classpath</name>
+    <value>/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/mapreduce/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/mapreduce/lib/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/common/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/common/lib/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/yarn/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/yarn/lib/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/hdfs/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/hdfs/lib/*</value>
+</property>
+</configuration>' >> mapred-site.xml
+	cd ../..
+
+	bin/hdfs dfs -rm -R /outputWC
+	bin/hdfs dfs -mkdir /inputWC
+	bin/hdfs dfs -put ~/DDPS_A1/WC/yelp_dataset_review /inputWC
+	bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar wordcount /inputWC/yelp_dataset_review /outputWC
+
+done
+
+]0;ddps2207@node105:~/DDPS_A1/WC[ddps2207@node105 WC]$ cat runExperimentSuitePR.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcat runExperimentSuitePR.sh [1P[1P[1P[1@v[1@i[1@m
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"runExperimentSuitePR.sh" 41L, 1818C[>c[2;1H[31m<property> 
+    <name>mapreduce.application.classpath</name>
+    <value>/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/mapreduce/*,/hh[5;1Home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/mapreduce/lib/*,/home/ddps22[6;1H207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/common/*,/home/ddps2207/das-bigdata--[7;1Hdeployment/frameworks/hadoop-3.2.2/share/hadoop/common/lib/*,/home/ddps2207/das-bigdata-deployment/ff[8;1Hrameworks/hadoop-3.2.2/share/hadoop/yarn/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-33[9;1H.2.2/share/hadoop/yarn/lib/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadd[10;1Hoop/hdfs/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/hdfs/lib/*</vaa[11;1Hlue>
+</property>
+</configuration>[m[38;5;130m'[m[31m [m[38;5;130m>>[m mapred-site.xml[14;9H[38;5;130mcd[m ../..[16;9Hbin/hdfs dfs [35m-rm[m [38;5;130m-R[m /outputWC[17;9Hbin/hdfs dfs [35m-mkdir[m /inputWC[18;9Hbin/hdfs dfs [35m-put[m ~/DDPS_A1/WC/yelp_dataset_review /inputWC[19;9Hbin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar wordcount /inputWCC[20;1H/yelp_dataset_review /outputWC
+
+[38;5;130mdone[m[24;83H33,2-9[8CBot[14;9H[?12l[?25h[27m[m[H[2J[?25l[2;1H[95m<property> 
+    <name>mapreduce.application.classpath</name>
+    <value>/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/mapreduce/*,/hh[5;1Home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/mapreduce/lib/*,/home/ddps22[6;1H207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/common/*,/home/ddps2207/das-bigdata--[7;1Hdeployment/frameworks/hadoop-3.2.2/share/hadoop/common/lib/*,/home/ddps2207/das-bigdata-deployment/ff[8;1Hrameworks/hadoop-3.2.2/share/hadoop/yarn/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-33[9;1H.2.2/share/hadoop/yarn/lib/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadd[10;1Hoop/hdfs/*,/home/ddps2207/das-bigdata-deployment/frameworks/hadoop-3.2.2/share/hadoop/hdfs/lib/*</vaa[11;1Hlue>
+</property>
+</configuration>[m[93m'[m[95m [m[93m>>[m mapred-site.xml[14;9H[93mcd[m ../..[16;9Hbin/hdfs dfs [38;5;224m-rm[m [93m-R[m /outputWC[17;9Hbin/hdfs dfs [38;5;224m-mkdir[m /inputWC[18;9Hbin/hdfs dfs [38;5;224m-put[m ~/DDPS_A1/WC/yelp_dataset_review /inputWC[19;9Hbin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar wordcount /inputWCC[20;1H/yelp_dataset_review /outputWC
+
+[93mdone[m[24;83H33,2-9[8CBot"runExperimentSuitePR.sh" 41L, 1818C[14;9H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;84H4,0-1[15;1H[?12l[?25h[?25l[24;84H5,1-8[16;8H[?12l[?25h[?25l[24;84H6[17;8H[?12l[?25h[?25l[24;86H2-9[17;9H[?12l[?25h[?25l[24;86H3-10[17;10H[?12l[?25h[?25l[24;86H4-11[17;11H[?12l[?25h[?25l[24;86H5-12[17;12H[?12l[?25h[?25l[24;86H6-13[17;13H[?12l[?25h[?25l[24;86H7-14[17;14H[?12l[?25h[?25l[24;86H8-15[17;15H[?12l[?25h[?25l[24;86H9-16[17;16H[?12l[?25h[?25l[24;86H10-17[17;17H[?12l[?25h[?25l[24;87H1-18[17;18H[?12l[?25h[?25l[24;87H2-19[17;19H[?12l[?25h[?25l[24;87H3-20[17;20H[?12l[?25h[?25l[24;87H4-21[17;21H[?12l[?25h[?25l[24;87H5-22[17;22H[?12l[?25h[?25l[24;87H6-23[17;23H[?12l[?25h[?25l[24;87H7-24[17;24H[?12l[?25h[?25l[24;87H8-25[17;25H[?12l[?25h[?25l[24;87H9-26[17;26H[?12l[?25h[?25l[24;86H20-27[17;27H[?12l[?25h[?25l[24;87H1-28[17;28H[?12l[?25h[?25l[24;87H2-29[17;29H[?12l[?25h[?25l[24;87H3-30[17;30H[?12l[?25h[?25l[24;87H4-31[17;31H[?12l[?25h[?25l[24;87H5-32[17;32H[?12l[?25h[?25l[24;87H6-33[17;33H[?12l[?25h[?25l[24;87H7-34[17;34H[?12l[?25h[?25l[24;87H8-35[17;35H[?12l[?25h[?25l[24;87H9-36[17;36H[?12l[?25h[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;83H36,29-36      Bot[17;36H[?12l[?25h[?25l C[24;86H30-37[17;37H[?12l[?25h[?25lC[17;37H[K[24;86H29-36[17;36H[?12l[?25h[?25l[24;86H30-37[17;37H[?12l[?25h[?25l[24;87H1-38[17;38H[?12l[?25h[?25l/[24;87H2-39[17;39H[?12l[?25h[?25lo[24;87H3-40[17;40H[?12l[?25h[?25lu[24;87H4-41[17;41H[?12l[?25h[?25lt[24;87H5-42[17;42H[?12l[?25h[?25lp[24;87H6-43[17;43H[?12l[?25h[?25lu[24;87H7-44[17;44H[?12l[?25h[?25lt[24;87H8-45[17;45H[?12l[?25h[?25lW[24;87H9-46[17;46H[?12l[?25h[?25lC[24;86H40-47[17;47H[?12l[?25h[24;1H[K[17;46H[?25l[24;83H36,39-46      Bot[17;46H[?12l[?25h[?25l[24;83H[K[24;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"runExperimentSuitePR.sh" 41L, 1828C written
+[?1l>[?12l[?25h[?1049l]0;ddps2207@node105:~/DDPS_A1/WC[ddps2207@node105 WC]$ exit
+exit
+
+Script done on Thu 03 Nov 2022 10:46:01 AM CET
+Script started on Thu 03 Nov 2022 10:46:08 AM CET
+]0;ddps2207@node105:~/DDPS_A1/WC[?1034h[ddps2207@node105 WC]$ exitvim runExperimentSuitePR.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P./[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+----------------------------Experiment no 0------------------------------------
+rm: `/outputWC': No such file or directory
+mkdir: `/inputWC': File exists
+put: `/inputWC/yelp_dataset_review': File exists
+2022-11-03 10:46:21,029 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://node105.ib.cluster:9000/outputWC already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:164)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:277)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:143)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1565)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1562)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1762)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1562)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1583)
+	at org.apache.hadoop.examples.WordCount.main(WordCount.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:71)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:144)
+	at org.apache.hadoop.examples.ExampleDriver.main(ExampleDriver.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+----------------------------Experiment no 1------------------------------------
+Deleted /outputWC
+^C^C^C^C^C----------------------------Experiment no 2------------------------------------
+^C^C^C^C^C^C^C----------------------------Experiment no 3------------------------------------
+^C^C^C^C^C^C^C----------------------------Experiment no 4------------------------------------
+^C
+]0;ddps2207@node105:~/DDPS_A1/WC[ddps2207@node105 WC]$ exit
+exit
+
+Script done on Thu 03 Nov 2022 10:46:45 AM CET
+Script started on Thu 03 Nov 2022 10:49:41 AM CET
+]0;ddps2207@node105:~/DDPS_A1/WC[?1034h[ddps2207@node105 WC]$ ./runExperimentSuitePR.sh 
+----------------------------Experiment no 0------------------------------------
+rm: `/outputWC': No such file or directory
+2022-11-03 10:49:58,347 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://node105.ib.cluster:9000/outputWC already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:164)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:277)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:143)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1565)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1562)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1762)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1562)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1583)
+	at org.apache.hadoop.examples.WordCount.main(WordCount.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:71)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:144)
+	at org.apache.hadoop.examples.ExampleDriver.main(ExampleDriver.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+----------------------------Experiment no 1------------------------------------
+Deleted /outputWC
+^C^C^C^C----------------------------Experiment no 2------------------------------------
+^C
+]0;ddps2207@node105:~/DDPS_A1/WC[ddps2207@node105 WC]$ run[K[K[K./[K[Kexit
+exit
+
+Script done on Thu 03 Nov 2022 10:50:23 AM CET
+Script started on Thu 03 Nov 2022 10:52:44 AM CET
+]0;ddps2207@node105:~/DDPS_A1/WC[?1034h[ddps2207@node105 WC]$ exit./runExperimentSuitePR.sh 
+----------------------------Experiment no 0------------------------------------
+-rm: Illegal option -rf
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Usage: hadoop fs [generic options] -rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...
+^C2022-11-03 10:52:48,414 WARN net.NetUtils: Unable to wrap exception of type class java.nio.channels.ClosedByInterruptException: it has no (String) constructor
+java.lang.NoSuchMethodException: java.nio.channels.ClosedByInterruptException.<init>(java.lang.String)
+	at java.lang.Class.getConstructor0(Class.java:3082)
+	at java.lang.Class.getConstructor(Class.java:1825)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:835)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:811)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1566)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1508)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1405)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:233)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:118)
+	at com.sun.proxy.$Proxy9.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.getFileInfo(ClientNamenodeProtocolTranslatorPB.java:910)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:422)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:165)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:157)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:95)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:359)
+	at com.sun.proxy.$Proxy10.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java:1671)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$29.doCall(DistributedFileSystem.java:1602)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$29.doCall(DistributedFileSystem.java:1599)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1614)
+	at org.apache.hadoop.fs.Globber.getFileStatus(Globber.java:65)
+	at org.apache.hadoop.fs.Globber.doGlob(Globber.java:281)
+	at org.apache.hadoop.fs.Globber.glob(Globber.java:149)
+	at org.apache.hadoop.fs.FileSystem.globStatus(FileSystem.java:2050)
+	at org.apache.hadoop.fs.shell.PathData.expandAsGlob(PathData.java:353)
+	at org.apache.hadoop.fs.shell.Command.expandArgument(Command.java:250)
+	at org.apache.hadoop.fs.shell.Command.expandArguments(Command.java:233)
+	at org.apache.hadoop.fs.shell.FsCommand.processRawArguments(FsCommand.java:104)
+	at org.apache.hadoop.fs.shell.Command.run(Command.java:177)
+	at org.apache.hadoop.fs.FsShell.run(FsShell.java:327)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:90)
+	at org.apache.hadoop.fs.FsShell.main(FsShell.java:390)
+mkdir: Failed on local exception: java.nio.channels.ClosedByInterruptException; Host Details : local host is: "node105.cm.cluster/10.141.0.5"; destination host is: "node105.ib.cluster":9000; 
+2022-11-03 10:52:48,424 WARN net.NetUtils: Unable to wrap exception of type class java.nio.channels.ClosedByInterruptException: it has no (String) constructor
+java.lang.NoSuchMethodException: java.nio.channels.ClosedByInterruptException.<init>(java.lang.String)
+	at java.lang.Class.getConstructor0(Class.java:3082)
+	at java.lang.Class.getConstructor(Class.java:1825)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:835)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:811)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1566)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1508)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1405)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:233)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:118)
+	at com.sun.proxy.$Proxy9.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.getFileInfo(ClientNamenodeProtocolTranslatorPB.java:910)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:422)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:165)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:157)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:95)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:359)
+	at com.sun.proxy.$Proxy10.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java:1671)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$29.doCall(DistributedFileSystem.java:1602)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$29.doCall(DistributedFileSystem.java:1599)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1614)
+	at org.apache.hadoop.fs.Globber.getFileStatus(Globber.java:65)
+	at org.apache.hadoop.fs.Globber.doGlob(Globber.java:281)
+	at org.apache.hadoop.fs.Globber.glob(Globber.java:149)
+	at org.apache.hadoop.fs.FileSystem.globStatus(FileSystem.java:2050)
+	at org.apache.hadoop.fs.shell.PathData.expandAsGlob(PathData.java:353)
+	at org.apache.hadoop.fs.shell.Command.expandArgument(Command.java:250)
+	at org.apache.hadoop.fs.shell.Command.expandArguments(Command.java:233)
+	at org.apache.hadoop.fs.shell.FsCommand.processRawArguments(FsCommand.java:104)
+	at org.apache.hadoop.fs.shell.Command.run(Command.java:177)
+	at org.apache.hadoop.fs.FsShell.run(FsShell.java:327)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:90)
+	at org.apache.hadoop.fs.FsShell.main(FsShell.java:390)
+mkdir: Failed on local exception: java.nio.channels.ClosedByInterruptException; Host Details : local host is: "node105.cm.cluster/10.141.0.5"; destination host is: "node105.ib.cluster":9000; 
+^C^C
+]0;ddps2207@node105:~/DDPS_A1/WC[ddps2207@node105 WC]$ ^C
+]0;ddps2207@node105:~/DDPS_A1/WC[ddps2207@node105 WC]$ exit
+exit
+
+Script done on Thu 03 Nov 2022 10:53:08 AM CET
+Script started on Thu 03 Nov 2022 11:22:13 AM CET
+]0;ddps2207@node105:~/DDPS_A1/WC[?1034h[ddps2207@node105 WC]$ ./runExperimentSuitePR.sh 
+----------------------------Experiment no 0------------------------------------
+rm: `/outputwc': No such file or directory
+2022-11-03 11:22:28,595 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:22:29,131 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0001
+2022-11-03 11:22:29,537 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:22:29,713 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:22:29,888 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0001
+2022-11-03 11:22:29,890 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:22:30,075 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:22:30,075 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:22:30,585 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0001
+2022-11-03 11:22:30,657 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0001/
+2022-11-03 11:22:30,658 INFO mapreduce.Job: Running job: job_1667470899124_0001
+2022-11-03 11:22:38,792 INFO mapreduce.Job: Job job_1667470899124_0001 running in uber mode : false
+2022-11-03 11:22:38,794 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:22:57,944 INFO mapreduce.Job:  map 28% reduce 0%
+2022-11-03 11:23:03,979 INFO mapreduce.Job:  map 42% reduce 0%
+2022-11-03 11:23:07,013 INFO mapreduce.Job:  map 47% reduce 0%
+2022-11-03 11:23:10,029 INFO mapreduce.Job:  map 58% reduce 0%
+2022-11-03 11:23:16,061 INFO mapreduce.Job:  map 67% reduce 0%
+2022-11-03 11:23:18,072 INFO mapreduce.Job:  map 71% reduce 0%
+2022-11-03 11:23:19,079 INFO mapreduce.Job:  map 78% reduce 0%
+2022-11-03 11:23:20,085 INFO mapreduce.Job:  map 82% reduce 0%
+2022-11-03 11:23:22,096 INFO mapreduce.Job:  map 93% reduce 0%
+2022-11-03 11:23:23,103 INFO mapreduce.Job:  map 100% reduce 26%
+2022-11-03 11:23:29,134 INFO mapreduce.Job:  map 100% reduce 71%
+2022-11-03 11:23:33,156 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:23:34,172 INFO mapreduce.Job: Job job_1667470899124_0001 completed successfully
+2022-11-03 11:23:34,321 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=699544
+		Total time spent by all reduces in occupied slots (ms)=97048
+		Total time spent by all map tasks (ms)=349772
+		Total time spent by all reduce tasks (ms)=24262
+		Total vcore-milliseconds taken by all map tasks=349772
+		Total vcore-milliseconds taken by all reduce tasks=24262
+		Total megabyte-milliseconds taken by all map tasks=716333056
+		Total megabyte-milliseconds taken by all reduce tasks=99377152
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=5766
+		CPU time spent (ms)=429860
+		Physical memory (bytes) snapshot=9264979968
+		Virtual memory (bytes) snapshot=39070646272
+		Total committed heap usage (bytes)=14494466048
+		Peak Map Physical memory (bytes)=890859520
+		Peak Map Virtual memory (bytes)=3688538112
+		Peak Reduce Physical memory (bytes)=1386098688
+		Peak Reduce Virtual memory (bytes)=5917368320
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 1------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:23:45,306 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:23:45,792 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0002
+2022-11-03 11:23:46,141 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:23:46,307 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:23:46,474 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0002
+2022-11-03 11:23:46,475 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:23:46,677 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:23:46,677 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:23:46,762 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0002
+2022-11-03 11:23:46,825 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0002/
+2022-11-03 11:23:46,826 INFO mapreduce.Job: Running job: job_1667470899124_0002
+2022-11-03 11:23:53,970 INFO mapreduce.Job: Job job_1667470899124_0002 running in uber mode : false
+2022-11-03 11:23:53,972 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:24:10,105 INFO mapreduce.Job:  map 10% reduce 0%
+2022-11-03 11:24:11,111 INFO mapreduce.Job:  map 34% reduce 0%
+2022-11-03 11:24:16,140 INFO mapreduce.Job:  map 38% reduce 0%
+2022-11-03 11:24:17,162 INFO mapreduce.Job:  map 52% reduce 0%
+2022-11-03 11:24:22,192 INFO mapreduce.Job:  map 54% reduce 0%
+2022-11-03 11:24:23,197 INFO mapreduce.Job:  map 64% reduce 0%
+2022-11-03 11:24:27,218 INFO mapreduce.Job:  map 67% reduce 0%
+2022-11-03 11:24:28,224 INFO mapreduce.Job:  map 77% reduce 0%
+2022-11-03 11:24:29,230 INFO mapreduce.Job:  map 93% reduce 0%
+2022-11-03 11:24:30,236 INFO mapreduce.Job:  map 96% reduce 0%
+2022-11-03 11:24:31,242 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 11:24:34,258 INFO mapreduce.Job:  map 100% reduce 38%
+2022-11-03 11:24:40,289 INFO mapreduce.Job:  map 100% reduce 75%
+2022-11-03 11:24:42,300 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:24:43,315 INFO mapreduce.Job: Job job_1667470899124_0002 completed successfully
+2022-11-03 11:24:43,460 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=602344
+		Total time spent by all reduces in occupied slots (ms)=91612
+		Total time spent by all map tasks (ms)=301172
+		Total time spent by all reduce tasks (ms)=22903
+		Total vcore-milliseconds taken by all map tasks=301172
+		Total vcore-milliseconds taken by all reduce tasks=22903
+		Total megabyte-milliseconds taken by all map tasks=616800256
+		Total megabyte-milliseconds taken by all reduce tasks=93810688
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=3667
+		CPU time spent (ms)=372280
+		Physical memory (bytes) snapshot=9462583296
+		Virtual memory (bytes) snapshot=39123234816
+		Total committed heap usage (bytes)=15411445760
+		Peak Map Physical memory (bytes)=912920576
+		Peak Map Virtual memory (bytes)=3699085312
+		Peak Reduce Physical memory (bytes)=1430499328
+		Peak Reduce Virtual memory (bytes)=5933285376
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 2------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:24:54,617 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:24:55,017 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0003
+2022-11-03 11:24:55,379 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:24:55,540 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:24:55,707 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0003
+2022-11-03 11:24:55,708 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:24:55,880 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:24:55,881 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:24:55,942 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0003
+2022-11-03 11:24:56,010 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0003/
+2022-11-03 11:24:56,011 INFO mapreduce.Job: Running job: job_1667470899124_0003
+2022-11-03 11:25:02,122 INFO mapreduce.Job: Job job_1667470899124_0003 running in uber mode : false
+2022-11-03 11:25:02,124 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:25:19,270 INFO mapreduce.Job:  map 34% reduce 0%
+2022-11-03 11:25:25,303 INFO mapreduce.Job:  map 49% reduce 0%
+2022-11-03 11:25:27,332 INFO mapreduce.Job:  map 52% reduce 0%
+2022-11-03 11:25:31,355 INFO mapreduce.Job:  map 64% reduce 0%
+2022-11-03 11:25:36,382 INFO mapreduce.Job:  map 72% reduce 0%
+2022-11-03 11:25:37,388 INFO mapreduce.Job:  map 87% reduce 0%
+2022-11-03 11:25:38,394 INFO mapreduce.Job:  map 89% reduce 0%
+2022-11-03 11:25:39,400 INFO mapreduce.Job:  map 96% reduce 0%
+2022-11-03 11:25:40,407 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 11:25:43,422 INFO mapreduce.Job:  map 100% reduce 43%
+2022-11-03 11:25:50,460 INFO mapreduce.Job:  map 100% reduce 87%
+2022-11-03 11:25:51,466 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:25:51,475 INFO mapreduce.Job: Job job_1667470899124_0003 completed successfully
+2022-11-03 11:25:51,630 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=599132
+		Total time spent by all reduces in occupied slots (ms)=86772
+		Total time spent by all map tasks (ms)=299566
+		Total time spent by all reduce tasks (ms)=21693
+		Total vcore-milliseconds taken by all map tasks=299566
+		Total vcore-milliseconds taken by all reduce tasks=21693
+		Total megabyte-milliseconds taken by all map tasks=613511168
+		Total megabyte-milliseconds taken by all reduce tasks=88854528
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=3372
+		CPU time spent (ms)=372180
+		Physical memory (bytes) snapshot=9395965952
+		Virtual memory (bytes) snapshot=39112699904
+		Total committed heap usage (bytes)=15246295040
+		Peak Map Physical memory (bytes)=912756736
+		Peak Map Virtual memory (bytes)=3689570304
+		Peak Reduce Physical memory (bytes)=1331630080
+		Peak Reduce Virtual memory (bytes)=5929349120
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 3------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:26:02,772 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:26:03,233 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0004
+2022-11-03 11:26:03,571 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:26:03,731 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:26:03,906 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0004
+2022-11-03 11:26:03,908 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:26:04,076 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:26:04,076 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:26:04,137 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0004
+2022-11-03 11:26:04,211 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0004/
+2022-11-03 11:26:04,212 INFO mapreduce.Job: Running job: job_1667470899124_0004
+2022-11-03 11:26:10,325 INFO mapreduce.Job: Job job_1667470899124_0004 running in uber mode : false
+2022-11-03 11:26:10,328 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:26:27,463 INFO mapreduce.Job:  map 27% reduce 0%
+2022-11-03 11:26:33,494 INFO mapreduce.Job:  map 40% reduce 0%
+2022-11-03 11:26:37,534 INFO mapreduce.Job:  map 44% reduce 0%
+2022-11-03 11:26:39,544 INFO mapreduce.Job:  map 57% reduce 0%
+2022-11-03 11:26:45,573 INFO mapreduce.Job:  map 68% reduce 0%
+2022-11-03 11:26:48,589 INFO mapreduce.Job:  map 72% reduce 0%
+2022-11-03 11:26:49,594 INFO mapreduce.Job:  map 75% reduce 0%
+2022-11-03 11:26:50,601 INFO mapreduce.Job:  map 86% reduce 0%
+2022-11-03 11:26:51,606 INFO mapreduce.Job:  map 97% reduce 0%
+2022-11-03 11:26:52,612 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 11:26:53,617 INFO mapreduce.Job:  map 100% reduce 35%
+2022-11-03 11:26:59,647 INFO mapreduce.Job:  map 100% reduce 72%
+2022-11-03 11:27:03,668 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:27:04,683 INFO mapreduce.Job: Job job_1667470899124_0004 completed successfully
+2022-11-03 11:27:04,834 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=676926
+		Total time spent by all reduces in occupied slots (ms)=96880
+		Total time spent by all map tasks (ms)=338463
+		Total time spent by all reduce tasks (ms)=24220
+		Total vcore-milliseconds taken by all map tasks=338463
+		Total vcore-milliseconds taken by all reduce tasks=24220
+		Total megabyte-milliseconds taken by all map tasks=693172224
+		Total megabyte-milliseconds taken by all reduce tasks=99205120
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=5127
+		CPU time spent (ms)=433800
+		Physical memory (bytes) snapshot=9388511232
+		Virtual memory (bytes) snapshot=39109967872
+		Total committed heap usage (bytes)=15296102400
+		Peak Map Physical memory (bytes)=897261568
+		Peak Map Virtual memory (bytes)=3693539328
+		Peak Reduce Physical memory (bytes)=1427779584
+		Peak Reduce Virtual memory (bytes)=5925253120
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 4------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:27:15,814 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:27:16,366 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0005
+2022-11-03 11:27:16,699 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:27:16,872 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:27:17,056 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0005
+2022-11-03 11:27:17,058 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:27:17,240 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:27:17,240 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:27:17,303 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0005
+2022-11-03 11:27:17,349 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0005/
+2022-11-03 11:27:17,358 INFO mapreduce.Job: Running job: job_1667470899124_0005
+2022-11-03 11:27:24,492 INFO mapreduce.Job: Job job_1667470899124_0005 running in uber mode : false
+2022-11-03 11:27:24,494 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:27:40,632 INFO mapreduce.Job:  map 3% reduce 0%
+2022-11-03 11:27:41,639 INFO mapreduce.Job:  map 27% reduce 0%
+2022-11-03 11:27:46,665 INFO mapreduce.Job:  map 29% reduce 0%
+2022-11-03 11:27:47,670 INFO mapreduce.Job:  map 41% reduce 0%
+2022-11-03 11:27:51,711 INFO mapreduce.Job:  map 45% reduce 0%
+2022-11-03 11:27:52,717 INFO mapreduce.Job:  map 46% reduce 0%
+2022-11-03 11:27:53,722 INFO mapreduce.Job:  map 58% reduce 0%
+2022-11-03 11:27:58,747 INFO mapreduce.Job:  map 59% reduce 0%
+2022-11-03 11:27:59,752 INFO mapreduce.Job:  map 69% reduce 0%
+2022-11-03 11:28:01,764 INFO mapreduce.Job:  map 72% reduce 0%
+2022-11-03 11:28:02,770 INFO mapreduce.Job:  map 76% reduce 0%
+2022-11-03 11:28:03,780 INFO mapreduce.Job:  map 91% reduce 0%
+2022-11-03 11:28:04,791 INFO mapreduce.Job:  map 95% reduce 0%
+2022-11-03 11:28:05,797 INFO mapreduce.Job:  map 96% reduce 0%
+2022-11-03 11:28:06,803 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 11:28:08,813 INFO mapreduce.Job:  map 100% reduce 35%
+2022-11-03 11:28:14,846 INFO mapreduce.Job:  map 100% reduce 75%
+2022-11-03 11:28:17,863 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:28:17,873 INFO mapreduce.Job: Job job_1667470899124_0005 completed successfully
+2022-11-03 11:28:18,025 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=672670
+		Total time spent by all reduces in occupied slots (ms)=92060
+		Total time spent by all map tasks (ms)=336335
+		Total time spent by all reduce tasks (ms)=23015
+		Total vcore-milliseconds taken by all map tasks=336335
+		Total vcore-milliseconds taken by all reduce tasks=23015
+		Total megabyte-milliseconds taken by all map tasks=688814080
+		Total megabyte-milliseconds taken by all reduce tasks=94269440
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=3341
+		CPU time spent (ms)=420420
+		Physical memory (bytes) snapshot=9444896768
+		Virtual memory (bytes) snapshot=39114346496
+		Total committed heap usage (bytes)=15290335232
+		Peak Map Physical memory (bytes)=903299072
+		Peak Map Virtual memory (bytes)=3689541632
+		Peak Reduce Physical memory (bytes)=1429303296
+		Peak Reduce Virtual memory (bytes)=5931810816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 5------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:28:29,113 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:28:29,533 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0006
+2022-11-03 11:28:29,881 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:28:30,047 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:28:30,239 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0006
+2022-11-03 11:28:30,241 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:28:30,457 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:28:30,457 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:28:30,527 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0006
+2022-11-03 11:28:30,564 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0006/
+2022-11-03 11:28:30,565 INFO mapreduce.Job: Running job: job_1667470899124_0006
+2022-11-03 11:28:36,696 INFO mapreduce.Job: Job job_1667470899124_0006 running in uber mode : false
+2022-11-03 11:28:36,698 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:28:53,835 INFO mapreduce.Job:  map 28% reduce 0%
+2022-11-03 11:28:59,868 INFO mapreduce.Job:  map 46% reduce 0%
+2022-11-03 11:29:03,906 INFO mapreduce.Job:  map 50% reduce 0%
+2022-11-03 11:29:05,917 INFO mapreduce.Job:  map 62% reduce 0%
+2022-11-03 11:29:11,948 INFO mapreduce.Job:  map 71% reduce 0%
+2022-11-03 11:29:12,953 INFO mapreduce.Job:  map 74% reduce 0%
+2022-11-03 11:29:13,959 INFO mapreduce.Job:  map 78% reduce 0%
+2022-11-03 11:29:14,966 INFO mapreduce.Job:  map 89% reduce 0%
+2022-11-03 11:29:15,977 INFO mapreduce.Job:  map 96% reduce 0%
+2022-11-03 11:29:16,983 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 11:29:20,001 INFO mapreduce.Job:  map 100% reduce 43%
+2022-11-03 11:29:26,032 INFO mapreduce.Job:  map 100% reduce 83%
+2022-11-03 11:29:28,043 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:29:28,053 INFO mapreduce.Job: Job job_1667470899124_0006 completed successfully
+2022-11-03 11:29:28,199 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=641608
+		Total time spent by all reduces in occupied slots (ms)=87736
+		Total time spent by all map tasks (ms)=320804
+		Total time spent by all reduce tasks (ms)=21934
+		Total vcore-milliseconds taken by all map tasks=320804
+		Total vcore-milliseconds taken by all reduce tasks=21934
+		Total megabyte-milliseconds taken by all map tasks=657006592
+		Total megabyte-milliseconds taken by all reduce tasks=89841664
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=3674
+		CPU time spent (ms)=403380
+		Physical memory (bytes) snapshot=9386332160
+		Virtual memory (bytes) snapshot=39132442624
+		Total committed heap usage (bytes)=14958985216
+		Peak Map Physical memory (bytes)=906407936
+		Peak Map Virtual memory (bytes)=3695218688
+		Peak Reduce Physical memory (bytes)=1416486912
+		Peak Reduce Virtual memory (bytes)=5939535872
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 6------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:29:39,058 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:29:39,557 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0007
+2022-11-03 11:29:39,882 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:29:40,045 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:29:40,245 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0007
+2022-11-03 11:29:40,247 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:29:40,452 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:29:40,452 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:29:40,525 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0007
+2022-11-03 11:29:40,574 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0007/
+2022-11-03 11:29:40,583 INFO mapreduce.Job: Running job: job_1667470899124_0007
+2022-11-03 11:29:46,691 INFO mapreduce.Job: Job job_1667470899124_0007 running in uber mode : false
+2022-11-03 11:29:46,693 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:30:03,831 INFO mapreduce.Job:  map 30% reduce 0%
+2022-11-03 11:30:09,861 INFO mapreduce.Job:  map 42% reduce 0%
+2022-11-03 11:30:10,886 INFO mapreduce.Job:  map 45% reduce 0%
+2022-11-03 11:30:15,912 INFO mapreduce.Job:  map 57% reduce 0%
+2022-11-03 11:30:21,941 INFO mapreduce.Job:  map 67% reduce 0%
+2022-11-03 11:30:24,958 INFO mapreduce.Job:  map 74% reduce 0%
+2022-11-03 11:30:26,969 INFO mapreduce.Job:  map 82% reduce 11%
+2022-11-03 11:30:27,974 INFO mapreduce.Job:  map 92% reduce 11%
+2022-11-03 11:30:28,981 INFO mapreduce.Job:  map 96% reduce 11%
+2022-11-03 11:30:29,987 INFO mapreduce.Job:  map 100% reduce 11%
+2022-11-03 11:30:33,003 INFO mapreduce.Job:  map 100% reduce 45%
+2022-11-03 11:30:39,036 INFO mapreduce.Job:  map 100% reduce 83%
+2022-11-03 11:30:41,047 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:30:42,062 INFO mapreduce.Job: Job job_1667470899124_0007 completed successfully
+2022-11-03 11:30:42,220 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=684784
+		Total time spent by all reduces in occupied slots (ms)=112716
+		Total time spent by all map tasks (ms)=342392
+		Total time spent by all reduce tasks (ms)=28179
+		Total vcore-milliseconds taken by all map tasks=342392
+		Total vcore-milliseconds taken by all reduce tasks=28179
+		Total megabyte-milliseconds taken by all map tasks=701218816
+		Total megabyte-milliseconds taken by all reduce tasks=115421184
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=5664
+		CPU time spent (ms)=425160
+		Physical memory (bytes) snapshot=9325510656
+		Virtual memory (bytes) snapshot=39106871296
+		Total committed heap usage (bytes)=15086911488
+		Peak Map Physical memory (bytes)=890687488
+		Peak Map Virtual memory (bytes)=3694166016
+		Peak Reduce Physical memory (bytes)=1418715136
+		Peak Reduce Virtual memory (bytes)=5918556160
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 7------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:30:53,282 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:30:53,756 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0008
+2022-11-03 11:30:54,085 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:30:54,245 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:30:54,428 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0008
+2022-11-03 11:30:54,430 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:30:54,616 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:30:54,616 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:30:54,683 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0008
+2022-11-03 11:30:54,741 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0008/
+2022-11-03 11:30:54,742 INFO mapreduce.Job: Running job: job_1667470899124_0008
+2022-11-03 11:31:00,855 INFO mapreduce.Job: Job job_1667470899124_0008 running in uber mode : false
+2022-11-03 11:31:00,857 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:31:17,997 INFO mapreduce.Job:  map 33% reduce 0%
+2022-11-03 11:31:24,030 INFO mapreduce.Job:  map 49% reduce 0%
+2022-11-03 11:31:26,059 INFO mapreduce.Job:  map 52% reduce 0%
+2022-11-03 11:31:30,082 INFO mapreduce.Job:  map 63% reduce 0%
+2022-11-03 11:31:35,109 INFO mapreduce.Job:  map 72% reduce 0%
+2022-11-03 11:31:36,114 INFO mapreduce.Job:  map 79% reduce 0%
+2022-11-03 11:31:37,122 INFO mapreduce.Job:  map 93% reduce 0%
+2022-11-03 11:31:38,128 INFO mapreduce.Job:  map 96% reduce 0%
+2022-11-03 11:31:39,134 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 11:31:42,150 INFO mapreduce.Job:  map 100% reduce 42%
+2022-11-03 11:31:48,182 INFO mapreduce.Job:  map 100% reduce 83%
+2022-11-03 11:31:50,194 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:31:50,203 INFO mapreduce.Job: Job job_1667470899124_0008 completed successfully
+2022-11-03 11:31:50,366 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=607606
+		Total time spent by all reduces in occupied slots (ms)=88624
+		Total time spent by all map tasks (ms)=303803
+		Total time spent by all reduce tasks (ms)=22156
+		Total vcore-milliseconds taken by all map tasks=303803
+		Total vcore-milliseconds taken by all reduce tasks=22156
+		Total megabyte-milliseconds taken by all map tasks=622188544
+		Total megabyte-milliseconds taken by all reduce tasks=90750976
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=3434
+		CPU time spent (ms)=384990
+		Physical memory (bytes) snapshot=9479053312
+		Virtual memory (bytes) snapshot=39098548224
+		Total committed heap usage (bytes)=15155593216
+		Peak Map Physical memory (bytes)=913285120
+		Peak Map Virtual memory (bytes)=3691835392
+		Peak Reduce Physical memory (bytes)=1356984320
+		Peak Reduce Virtual memory (bytes)=5929938944
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 8------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:32:01,551 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:32:02,063 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0009
+2022-11-03 11:32:02,423 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:32:02,595 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:32:02,778 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0009
+2022-11-03 11:32:02,779 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:32:02,955 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:32:02,956 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:32:03,037 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0009
+2022-11-03 11:32:03,097 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0009/
+2022-11-03 11:32:03,098 INFO mapreduce.Job: Running job: job_1667470899124_0009
+2022-11-03 11:32:09,212 INFO mapreduce.Job: Job job_1667470899124_0009 running in uber mode : false
+2022-11-03 11:32:09,214 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:32:26,352 INFO mapreduce.Job:  map 27% reduce 0%
+2022-11-03 11:32:32,384 INFO mapreduce.Job:  map 42% reduce 0%
+2022-11-03 11:32:35,419 INFO mapreduce.Job:  map 46% reduce 0%
+2022-11-03 11:32:38,435 INFO mapreduce.Job:  map 58% reduce 0%
+2022-11-03 11:32:44,465 INFO mapreduce.Job:  map 69% reduce 0%
+2022-11-03 11:32:45,471 INFO mapreduce.Job:  map 72% reduce 0%
+2022-11-03 11:32:47,482 INFO mapreduce.Job:  map 76% reduce 0%
+2022-11-03 11:32:48,488 INFO mapreduce.Job:  map 87% reduce 0%
+2022-11-03 11:32:49,493 INFO mapreduce.Job:  map 91% reduce 0%
+2022-11-03 11:32:50,499 INFO mapreduce.Job:  map 97% reduce 0%
+2022-11-03 11:32:51,504 INFO mapreduce.Job:  map 100% reduce 26%
+2022-11-03 11:32:57,536 INFO mapreduce.Job:  map 100% reduce 72%
+2022-11-03 11:33:01,557 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:33:01,567 INFO mapreduce.Job: Job job_1667470899124_0009 completed successfully
+2022-11-03 11:33:01,725 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=668904
+		Total time spent by all reduces in occupied slots (ms)=95772
+		Total time spent by all map tasks (ms)=334452
+		Total time spent by all reduce tasks (ms)=23943
+		Total vcore-milliseconds taken by all map tasks=334452
+		Total vcore-milliseconds taken by all reduce tasks=23943
+		Total megabyte-milliseconds taken by all map tasks=684957696
+		Total megabyte-milliseconds taken by all reduce tasks=98070528
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=4728
+		CPU time spent (ms)=423730
+		Physical memory (bytes) snapshot=9406480384
+		Virtual memory (bytes) snapshot=39108116480
+		Total committed heap usage (bytes)=15312879616
+		Peak Map Physical memory (bytes)=902934528
+		Peak Map Virtual memory (bytes)=3692630016
+		Peak Reduce Physical memory (bytes)=1415213056
+		Peak Reduce Virtual memory (bytes)=5927456768
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 9------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:33:12,698 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:33:13,164 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0010
+2022-11-03 11:33:13,485 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:33:13,646 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:33:13,837 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0010
+2022-11-03 11:33:13,839 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:33:14,023 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:33:14,023 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:33:14,084 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0010
+2022-11-03 11:33:14,125 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0010/
+2022-11-03 11:33:14,130 INFO mapreduce.Job: Running job: job_1667470899124_0010
+2022-11-03 11:33:21,255 INFO mapreduce.Job: Job job_1667470899124_0010 running in uber mode : false
+2022-11-03 11:33:21,257 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:33:38,396 INFO mapreduce.Job:  map 28% reduce 0%
+2022-11-03 11:33:44,427 INFO mapreduce.Job:  map 42% reduce 0%
+2022-11-03 11:33:46,459 INFO mapreduce.Job:  map 45% reduce 0%
+2022-11-03 11:33:50,484 INFO mapreduce.Job:  map 57% reduce 0%
+2022-11-03 11:33:56,517 INFO mapreduce.Job:  map 68% reduce 0%
+2022-11-03 11:33:57,522 INFO mapreduce.Job:  map 72% reduce 0%
+2022-11-03 11:33:58,527 INFO mapreduce.Job:  map 76% reduce 0%
+2022-11-03 11:34:00,538 INFO mapreduce.Job:  map 83% reduce 0%
+2022-11-03 11:34:01,544 INFO mapreduce.Job:  map 87% reduce 0%
+2022-11-03 11:34:02,555 INFO mapreduce.Job:  map 97% reduce 22%
+2022-11-03 11:34:03,567 INFO mapreduce.Job:  map 100% reduce 22%
+2022-11-03 11:34:08,592 INFO mapreduce.Job:  map 100% reduce 68%
+2022-11-03 11:34:13,620 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:34:13,629 INFO mapreduce.Job: Job job_1667470899124_0010 completed successfully
+2022-11-03 11:34:13,768 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=669398
+		Total time spent by all reduces in occupied slots (ms)=101340
+		Total time spent by all map tasks (ms)=334699
+		Total time spent by all reduce tasks (ms)=25335
+		Total vcore-milliseconds taken by all map tasks=334699
+		Total vcore-milliseconds taken by all reduce tasks=25335
+		Total megabyte-milliseconds taken by all map tasks=685463552
+		Total megabyte-milliseconds taken by all reduce tasks=103772160
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=4909
+		CPU time spent (ms)=420320
+		Physical memory (bytes) snapshot=9348042752
+		Virtual memory (bytes) snapshot=39112368128
+		Total committed heap usage (bytes)=14907604992
+		Peak Map Physical memory (bytes)=901087232
+		Peak Map Virtual memory (bytes)=3690352640
+		Peak Reduce Physical memory (bytes)=1381003264
+		Peak Reduce Virtual memory (bytes)=5935947776
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 10------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:34:24,747 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:34:25,189 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0011
+2022-11-03 11:34:25,502 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:34:25,662 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:34:25,837 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0011
+2022-11-03 11:34:25,840 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:34:26,042 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:34:26,042 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:34:26,106 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0011
+2022-11-03 11:34:26,153 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0011/
+2022-11-03 11:34:26,154 INFO mapreduce.Job: Running job: job_1667470899124_0011
+2022-11-03 11:34:32,270 INFO mapreduce.Job: Job job_1667470899124_0011 running in uber mode : false
+2022-11-03 11:34:32,272 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:34:49,411 INFO mapreduce.Job:  map 29% reduce 0%
+2022-11-03 11:34:55,444 INFO mapreduce.Job:  map 44% reduce 0%
+2022-11-03 11:34:56,467 INFO mapreduce.Job:  map 47% reduce 0%
+2022-11-03 11:35:01,501 INFO mapreduce.Job:  map 61% reduce 0%
+2022-11-03 11:35:07,533 INFO mapreduce.Job:  map 70% reduce 0%
+2022-11-03 11:35:09,546 INFO mapreduce.Job:  map 78% reduce 0%
+2022-11-03 11:35:10,553 INFO mapreduce.Job:  map 89% reduce 0%
+2022-11-03 11:35:11,559 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 11:35:13,571 INFO mapreduce.Job:  map 100% reduce 30%
+2022-11-03 11:35:19,601 INFO mapreduce.Job:  map 100% reduce 71%
+2022-11-03 11:35:23,622 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:35:23,633 INFO mapreduce.Job: Job job_1667470899124_0011 completed successfully
+2022-11-03 11:35:23,776 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=650796
+		Total time spent by all reduces in occupied slots (ms)=97728
+		Total time spent by all map tasks (ms)=325398
+		Total time spent by all reduce tasks (ms)=24432
+		Total vcore-milliseconds taken by all map tasks=325398
+		Total vcore-milliseconds taken by all reduce tasks=24432
+		Total megabyte-milliseconds taken by all map tasks=666415104
+		Total megabyte-milliseconds taken by all reduce tasks=100073472
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=4382
+		CPU time spent (ms)=406530
+		Physical memory (bytes) snapshot=9417035776
+		Virtual memory (bytes) snapshot=39117504512
+		Total committed heap usage (bytes)=15088484352
+		Peak Map Physical memory (bytes)=896921600
+		Peak Map Virtual memory (bytes)=3698384896
+		Peak Reduce Physical memory (bytes)=1417846784
+		Peak Reduce Virtual memory (bytes)=5931282432
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 11------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:35:34,812 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:35:35,330 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0012
+2022-11-03 11:35:35,673 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:35:35,837 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:35:36,045 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0012
+2022-11-03 11:35:36,047 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:35:36,229 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:35:36,229 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:35:36,294 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0012
+2022-11-03 11:35:36,339 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0012/
+2022-11-03 11:35:36,347 INFO mapreduce.Job: Running job: job_1667470899124_0012
+2022-11-03 11:35:42,451 INFO mapreduce.Job: Job job_1667470899124_0012 running in uber mode : false
+2022-11-03 11:35:42,453 INFO mapreduce.Job:  map 0% reduce 0%
+2022-11-03 11:35:59,607 INFO mapreduce.Job:  map 32% reduce 0%
+2022-11-03 11:36:05,639 INFO mapreduce.Job:  map 47% reduce 0%
+2022-11-03 11:36:06,663 INFO mapreduce.Job:  map 50% reduce 0%
+2022-11-03 11:36:11,691 INFO mapreduce.Job:  map 63% reduce 0%
+2022-11-03 11:36:15,711 INFO mapreduce.Job:  map 67% reduce 0%
+2022-11-03 11:36:16,716 INFO mapreduce.Job:  map 71% reduce 0%
+2022-11-03 11:36:17,722 INFO mapreduce.Job:  map 82% reduce 0%
+2022-11-03 11:36:18,728 INFO mapreduce.Job:  map 85% reduce 0%
+2022-11-03 11:36:19,734 INFO mapreduce.Job:  map 89% reduce 0%
+2022-11-03 11:36:20,740 INFO mapreduce.Job:  map 93% reduce 0%
+2022-11-03 11:36:21,747 INFO mapreduce.Job:  map 100% reduce 0%
+2022-11-03 11:36:22,752 INFO mapreduce.Job:  map 100% reduce 35%
+2022-11-03 11:36:28,784 INFO mapreduce.Job:  map 100% reduce 75%
+2022-11-03 11:36:31,801 INFO mapreduce.Job:  map 100% reduce 100%
+2022-11-03 11:36:31,810 INFO mapreduce.Job: Job job_1667470899124_0012 completed successfully
+2022-11-03 11:36:31,950 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=824429818
+		FILE: Number of bytes written=1210060998
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1151108179
+		HDFS: Number of bytes written=319916018
+		HDFS: Number of read operations=32
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=609420
+		Total time spent by all reduces in occupied slots (ms)=90780
+		Total time spent by all map tasks (ms)=304710
+		Total time spent by all reduce tasks (ms)=22695
+		Total vcore-milliseconds taken by all map tasks=304710
+		Total vcore-milliseconds taken by all reduce tasks=22695
+		Total megabyte-milliseconds taken by all map tasks=624046080
+		Total megabyte-milliseconds taken by all reduce tasks=92958720
+	Map-Reduce Framework
+		Map input records=1507907
+		Map output records=158397499
+		Map output bytes=1783771862
+		Map output materialized bytes=383265845
+		Input split bytes=1107
+		Combine input records=169502581
+		Combine output records=18359502
+		Reduce input groups=4775833
+		Reduce shuffle bytes=383265845
+		Reduce input records=7254420
+		Reduce output records=4775833
+		Spilled Records=25613922
+		Shuffled Maps =9
+		Failed Shuffles=0
+		Merged Map outputs=9
+		GC time elapsed (ms)=2318
+		CPU time spent (ms)=378050
+		Physical memory (bytes) snapshot=9480638464
+		Virtual memory (bytes) snapshot=39119679488
+		Total committed heap usage (bytes)=13697024000
+		Peak Map Physical memory (bytes)=909910016
+		Peak Map Virtual memory (bytes)=3692818432
+		Peak Reduce Physical memory (bytes)=1382883328
+		Peak Reduce Virtual memory (bytes)=5933088768
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1151107072
+	File Output Format Counters 
+		Bytes Written=319916018
+Deleted /outputwc
+----------------------------Experiment no 12------------------------------------
+rm: `/outputwc': No such file or directory
+mkdir: `/inputwc': File exists
+put: `/inputwc/yelp_dataset_review': File exists
+2022-11-03 11:36:43,014 INFO client.RMProxy: Connecting to ResourceManager at node105.ib.cluster/10.149.1.5:8030
+2022-11-03 11:36:43,528 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ddps2207/.staging/job_1667470899124_0013
+2022-11-03 11:36:43,866 INFO input.FileInputFormat: Total input files to process : 1
+2022-11-03 11:36:44,018 INFO mapreduce.JobSubmitter: number of splits:9
+2022-11-03 11:36:44,201 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1667470899124_0013
+2022-11-03 11:36:44,203 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-11-03 11:36:44,396 INFO conf.Configuration: resource-types.xml not found
+2022-11-03 11:36:44,397 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-11-03 11:36:44,462 INFO impl.YarnClientImpl: Submitted application application_1667470899124_0013
+2022-11-03 11:36:44,507 INFO mapreduce.Job: The url to track the job: http://node105.ib.cluster:8088/proxy/application_1667470899124_0013/
+2022-11-03 11:36:44,515 INFO mapre
