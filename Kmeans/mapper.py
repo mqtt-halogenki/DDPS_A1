@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """mapper.py"""
 
-__authors__ = "Vaggelis Malandrakis, KLeio Fragkedaki"
 
 import sys
 from math import sqrt
