@@ -1,8 +1,4 @@
 #!/usr/bin/env python
-"""reducer.py"""
-
-__authors__ = "Vaggelis Malandrakis, KLeio Fragkedaki"
-
 import sys
 
 def calculateNewCentroids():

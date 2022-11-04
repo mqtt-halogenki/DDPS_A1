@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-"""mapper.py"""
-
 
 import sys
 from math import sqrt
